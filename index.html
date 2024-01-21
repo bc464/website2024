@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
   <meta name="color-scheme" content="dark light">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -16,59 +15,47 @@
   
   <link rel="stylesheet" href="style.css">
    <script defer src="script.js"></script>
-  <script defer src="scriptFrontend.js"></script>
 
 </head>
 <body>
   <main class="container-main">
-    <nav>
-      
-
-      <div class="nav-content">
-      <a class="links-nav" class="links-nav" href="index.html">Home</a>
-      <a class="links-nav" class="links-nav" href="#about">About</a>
-      <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
-      
-      <button id="myBtn" class="btn" >Contact</button>
-    </div>
-    <!-- Mobile Navigation -->
-    <div class="mobile-container">
-      <img src="./images/other/hamburger.png" alt="hamburger-icon" class="mobile-icon hamburger-icon">
-      <img src="./images/other/close.png" alt="hamburger-icon" class="mobile-icon close-icon">
-    
-      
-      <div class="mobile-content">
-        <a class="links-nav"  href="index.html">Home</a>
-      <a class="links-nav" class="links-nav" href="#about">About</a>
-      <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
-      
-      <button id="myBtn" class="btn btn-mobile" >Contact</button>
+    <nav> 
+      <div class="desktop-nav__container">
+        <ul>
+          <li> <a class="links-nav" class="links-nav" href="#home">Home</a></li>
+          <li> <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a></li>
+          <li><a class="links-nav" class="links-nav" href="#codewell">Codewell</a></li>
+        </ul>
       </div>
-    </div>
-
     </nav>
-  
   <!-- Main Text -->
   <section id="home" class="main-text">
     <div>
-        <h1>Hi</h1>
-    <p>The purpose of this website is to showcase screenshots of projects worked on as a visual presentation of abilities. </p>
-    <p>The content for the FrontEnd Mentor and Codewell projects where provided by two websites that offer the developer the opportunity to apply their acquired skills in completing a said project. The websites are <a class="link--website" href="https://www.codewell.cc/" target="_blank">Codewell</a> and <a class="link--website" href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor.</a></p>
-    <p>The Other were from other websites including projects by <a href="https://www.jsmatery.pro" class="link--website" target="_blank">JSMastery</a></p>
-    <p>The languages used in completing these projects included HTML, CSS, JavaScript and React</p>
-    <p>Enjoy and please feel free to contact us if you have any questions or need any assitance in your own project.</p>
+      <h1><i>Hi, my name is Brian</i></h1>
+      <p>I am a Webdeveloper and the purpose of this website is to showcase screenshots of projects worked on as a visual presentation of abilities. </p>
+      <p>The content for the FrontEnd Mentor and Codewell projects where provided by two websites that offer the developer the opportunity to apply their acquired skills in completing a said project. The websites are <a class="link--website" href="https://www.codewell.cc/" target="_blank">Codewell</a> and <a class="link--website" href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor.</a></p>
+      
+      <p>Enjoy and please feel free to contact me if you have any questions or need any assitance in your own project.</p>
+      <button id="myBtn" class="btn" >Contact Me</button>
     </div>
-    <div>
-        <img src="./images/home-office.jpg" alt="home office">
+    <div class="office-img">
+        <img src="./images/home-office.jpg" alt="home office" width="500px">
     </div>
-    
   </section>
-
+<!-- Skill Set -->
+  <section class="skill-logos">
+    <h2>Current Skill Set</h2>
+    <div class="logo-container">
+      <img src="./images/logos/html-logo" alt="html-logo" width=""100px" height="100px">
+      <img src="./images/logos/css-logo" alt="css-logo" width=""100px" height="100px">
+      <img src="./images/logos/js-logo.png" alt="js-logo" width=""100px" height="100px">
+      <img src="./images/logos/react-logo" alt="react-logo" width=""100px" height="100px">
+    </div>
+  </section>
+<!-- Frontend Mentor -->
   <section class="frontend" id="frontend">
     <h2 >FrontEnd Mentor</h2>
-    <div class="slider-container">
-     
-      
+    <div class="slider-container">      
       <div class="slide">
         <img src="./images/frontend/Skilled e-learning landing page.png" alt="skilled e-learning landing page" class="slide-img">
       </div>
@@ -99,53 +86,42 @@
        <div class="slide">
         <img src="./images/frontend/Single-page design portfolio.png" alt="Single page design portfolio" class="slide-img">
       </div> 
-    
     </div>
     <div class="btn-container">
       <button type="button" class="prevBtn">prev</button>
       <button type="button" class="nextBtn">next</button>
     </div>
-
   </section>
-
-   <!-- CODEWELL -->
-    <section class="codewell-section">
-      <h2 class="codewell__heading">Codewell</h2>
-      <div class="codewell-main">
-        
-        <div class="codewell-card">
-           <div class="codewell-img-card">
+<!-- CODEWELL -->
+  <section id="codewell" class="codewell-section">
+    <h2 class="codewell__heading">Codewell</h2>
+    <div class="codewell-main">
+      <div class="codewell-card">
+        <div class="codewell-img-card">
             <img class="codewell-img" src="./images/codewell/Arclight.png" alt="codewell-img">
-         </div>
         </div>
-        
-        
-     
-        <div class="codewell-card">
-          <div class="codewell-img-card">
-            <img class="codewell-img" src="./images/codewell/Commune Waitlist Starter.png" alt="codewell-img">
-          </div>
+      </div>
+      <div class="codewell-card">
+        <div class="codewell-img-card">
+          <img class="codewell-img" src="./images/codewell/Commune Waitlist Starter.png" alt="codewell-img">
         </div>
-        
-         <div class="codewell-card">
-          <div class="codewell-img-card">
-            <img class="codewell-img" src="./images/codewell/Hosterr.png" alt="codewell-img">
-          </div>
+      </div>
+      <div class="codewell-card">
+        <div class="codewell-img-card">
+          <img class="codewell-img" src="./images/codewell/Hosterr.png" alt="codewell-img">
         </div>
-         
-        <div class="codewell-card">
-          <div class="codewell-img-card">
-            <img class="codewell-img" src="./images/codewell/Meeet.png" alt="codewell-img">
-          </div>
+      </div>
+      <div class="codewell-card">
+        <div class="codewell-img-card">
+          <img class="codewell-img" src="./images/codewell/Meeet.png" alt="codewell-img">
         </div>
-       
-        <div class="codewell-card">
-          <div class="codewell-img-card">
-            <img class="codewell-img" src="./images/codewell/Personal-Blog.png" alt="codewell-img">
-          </div>
+      </div>
+      <div class="codewell-card">
+        <div class="codewell-img-card">
+          <img class="codewell-img" src="./images/codewell/Personal-Blog.png" alt="codewell-img">
         </div>
-       
-        <div class="codewell-card">
+      </div>
+      <div class="codewell-card">
           <div class="codewell-img-card">
             <img class="codewell-img" src="./images/codewell/Unifeed Starter.png" alt="codewell-img">
           </div>
@@ -161,15 +137,11 @@
           </div>
         </div>
       </div>
-    </section>  
-
- 
-  
- <!-- Modal -->
-    
+    </section>   
+        
+<!--Modal Section  -->
     <section class="modal-section">
-   
-    <div id="myModal" class="modal">
+      <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times</span>
@@ -215,12 +187,11 @@
         </div>
       </div>
     </section>
-    
     <footer>
      <p>&copy;2024</p>
-          
     </footer>
- 
-</main>
+  </main>
   </body>
 </html>
+
+   
